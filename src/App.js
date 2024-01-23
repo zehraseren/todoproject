@@ -1,12 +1,15 @@
-import './App.css';
-import CreateTask from './CreateTask';
-import Header from './Header';
+import "./App.css";
+import CreateTask from "./CreateTask";
+import Header from "./Header";
 
 function App() {
+  const addTask = (newTask) => {
+    console.log(newTask);
+  };
   return (
     <div className="App">
-      <Header/>
-      <CreateTask/>
+      <Header />
+      <CreateTask onAdd={addTask} />
     </div>
   );
 }
