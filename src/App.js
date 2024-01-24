@@ -3,6 +3,7 @@ import CreateTask from "./CreateTask";
 import Header from "./Header";
 import { useState } from "react";
 import Task from "./Task";
+import Footer from "./Footer";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -25,7 +26,7 @@ function App() {
       <Header />
       <CreateTask onAdd={addTask} />
       <div className="container">
-        <div className="row my-5">
+        <div className="row my-5 tasks">
           {tasks.map((taskItem, index) => {
             return (
               <Task
@@ -39,6 +40,7 @@ function App() {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

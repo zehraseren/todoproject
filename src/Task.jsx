@@ -6,7 +6,7 @@ export default function Task(props) {
   };
 
   return (
-    <div className="col-md-4 mb-4">
+    <div className="col-md-3 mb-3 mx-3">
       <div className="contentDiv">
         <h1>{props.title}</h1>
         <p>{props.content}</p>
